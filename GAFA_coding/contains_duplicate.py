@@ -1,4 +1,5 @@
 def has_duplicate(array: list) -> bool:
+
     elements = {}
     for el in array:
         if el in elements:
