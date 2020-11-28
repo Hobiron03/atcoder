@@ -1,3 +1,4 @@
+# return char of first non-repeation char
 def return_first_non_repeation_str(string: str) -> str:
 
     # 例外：string.len() <= 1 のときは確実にユニーク
