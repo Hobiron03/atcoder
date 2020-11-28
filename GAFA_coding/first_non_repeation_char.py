@@ -1,4 +1,9 @@
 def return_first_non_repeation_str(string: str) -> str:
+
+    # 例外：string.len() <= 1 のときは確実にユニーク
+    if len(string) <= 1:
+        return string
+
     # {str: int}
     # step1: 与えられた文字列に含まれている文字を集計する
     count_map = {}
@@ -17,5 +22,5 @@ def return_first_non_repeation_str(string: str) -> str:
 
 
 if __name__ == "__main__":
-    res = return_first_non_repeation_str("abcdefavabcde")
+    res = return_first_non_repeation_str("a")
     print(res)
