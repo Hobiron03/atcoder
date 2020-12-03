@@ -1,8 +1,13 @@
+# pre: hello
+# post: olleh
+
+
 def reverse_string(string: str) -> str:
     str_array = list(string)
     start = 0
     end = len(string) - 1
-    while start != end:
+    # 二分探索で両端から検索
+    while start < end:
         temp = str_array[start]
         str_array[start] = str_array[end]
         str_array[end] = temp
@@ -14,4 +19,4 @@ def reverse_string(string: str) -> str:
 
 
 if __name__ == "__main__":
-    print(reverse_string("Hello,world"))
+    print(reverse_string("Hello,world, my name is jun"))
