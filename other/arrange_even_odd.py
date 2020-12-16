@@ -4,7 +4,6 @@ def arrege_even_odd(nums: list) -> list:
 
     while runnnerIndex < len(nums):
         if isEven(nums[runnnerIndex]):
-            # swap
             temp = nums[runnnerIndex]
             nums[runnnerIndex] = nums[oddStartIndex]
             nums[oddStartIndex] = temp
@@ -15,7 +14,6 @@ def arrege_even_odd(nums: list) -> list:
 
 def isEven(num: int) -> bool:
     if num % 2 == 0:
-        print("True")
         return True
     return False
 
