@@ -15,4 +15,3 @@ def remove_elements(nums: list, target: int) -> list:
 
 if __name__ == "__main__":
     print(remove_elements([3, 2, 2, 3, 8], 3))
-    # [2,2,8, 3,3]
